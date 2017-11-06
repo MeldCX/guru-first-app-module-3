@@ -10,7 +10,7 @@ export default class Icon extends React.Component {
         size: PropTypes.string
     }
     static defaultProps = {
-        color: 'c-shade-4',
+        color: 'shade-4',
         size: 'small'
     }
     render() {
@@ -21,7 +21,7 @@ export default class Icon extends React.Component {
         } = this.props;
 
         const classes = {
-            [color]: true,
+            [`c-${color}`]: true,
             [`i-${type}`]: true,
             [`s-${size}`]: true,
             i: true
